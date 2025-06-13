@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#encabezadopagina {
+    background:linear-gradient(to right, #5271FF, #060762);
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.menu:hover {
+    background-color: #5271FF;
+    padding: 10px;
+}
+
+main {
+    background-color: #ffffff;
+}
+#logo {
+   float:left;
+   width: 80%;
+   padding: auto;
+}
+#logo > img {
+    height: 40px;
+}
+
+.cuadradito {
+    background-color: #7f7f7f;
+    float: left;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.cuadradito:hover {
+    background-color: #060762;
+}
+
+.buscar {
+    position: relative;
+}
+input {
+    padding: 10px;
+    padding-right: 50pc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.buscador {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: #060762;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    margin-left: -40px;
+    padding: 8px 30px 29px 15px;
+
+}
+.perfil {
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+#galeria {
+  column-count: 4;
+  column-gap: 10px;
+  padding: 20px;
+}
+#galeria img,
+#galeria video {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: block;
+  break-inside: avoid; 
+  object-fit: cover;
+}
+#galeria img:hover,
+#galeria video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.lista {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+.lista li a {
+    text-decoration: none;
+    color: #dedede;
+}
+.abrir,
+.cerrar {
+    display: none;
+}
+#seccion div h1 {
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cuadros {
+    padding: 15px auto;
+}
+@media screen and (max-width: 2600px) {
+    .abrir,
+    .cerrar {
+        display: block;
+        border: 0;
+        font-size:1.8rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #dedede;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #060762;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .2);
+        width: 10%;
+    } 
+  
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .lista {
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+
+/* Parte de Cris
+Estilos del modal */
+.modal {
+  display: block; /* Estará visible desde el inicio */
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+/* Contenido del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 40px ;
+  border-radius: 12px;
+  width: 300px;
+  position: relative;
+  text-align: center;
+}
+
+/* Botón de cierre */
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Inputs y botones */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.google-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+}
+
+#logoazul {
+     margin-bottom: 10px;
+}
+
+#email{
+    margin: 15px 0px;
+}
+
+#password{
+    margin: 15px 0px;
+}
+
+.social-login{
+    margin-top: 20px;
+}
+
+#inicio {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoinicio {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background:linear-gradient(to right, #5271FF, #060762);
+    color: #e9e0cd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
